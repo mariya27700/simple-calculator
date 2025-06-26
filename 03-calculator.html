@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .calculator{
+                text-align: center;
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .inputCalculator{
+                margin-left: 450px;
+                margin-top: 50px;
+                padding-left: 70px;
+                padding-right: 40px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 20px;
+            }
+            .buttons,.button,.seven,.zero,.sub{
+             margin-left:450px;
+             margin-top: 30px;
+             font-size: 30px;
+             
+            }
+            .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b0,.bplus,.bequals,.bsub,.bmul,.bdiv{
+             padding-left: 53px;
+             padding-right: 50px;
+             padding-top: 30px;
+             padding-bottom: 20px;
+             
+            }
+            .bclear{
+                 padding-left: 53px;
+             padding-right: 50px;
+             padding-top: 30px;
+             padding-bottom: 20px;
+             margin-top: 20px;
+             margin-left: 570px;
+            }
+           .p{
+             color: black;
+           
+            background-color: rgb(243, 151, 202);
+            border-radius: 1px;
+            border-color: rgb(186, 151, 243);
+            cursor: pointer;
+
+            }
+            .y{
+                 color: black;
+           
+            background-color: rgb(237, 243, 151);
+            border-radius: 1px;
+            border-color: rgb(186, 151, 243);
+            cursor: pointer;
+            }
+                  
+            .o{
+                color: black;
+           
+            background-color: white;
+            border-radius: 1px;
+            border-color: rgb(186, 151, 243);
+            cursor: pointer;
+            }
+             
+        </style>
+    </head>
+    <body>
+        <div class="change">
+        <h1 class="calculator">Calculator</h1>
+<div class="backgroundSelector">
+        <button class="p" onclick="pink();">P</button>
+        <button class="y" onclick="yellow();">Y</button>
+        <button class="o" onclick="original();">O</button>
+</div>
+            <input class="inputCalculator" type="text" >
+
+            <div class="buttons" >
+
+                    <button class="b1" onclick=" display(1); " >1</button>
+                    <button class="b2" onclick="display(2);">2</button>
+                    <button class="b3" onclick="display(3);">3</button>
+
+            </div>
+
+            <div class="button">
+
+                    <button class="b4" onclick="display(4);">4</button>
+                    <button class="b5" onclick="display(5);">5</button>
+                    <button class="b6"  onclick="display(6);">6</button>
+            </div>
+
+            <div class="seven">
+
+                    <button class="b7" onclick="display(7);">7</button>
+                    <button class="b8" onclick="display(8);">8</button>
+                    <button class="b9" onclick="display(9);">9</button>
+
+            </div>
+
+            <div class="zero">
+
+                    <button class="b0" onclick="display(0);">0</button>
+                    <button class="bplus" onclick="sum();">+</button>
+                    <button class="bequals" onclick="equals();">=</button>
+
+        </div>
+
+     <div class="sub">
+
+                    <button class="bsub" onclick="difference();">-</button>
+                    <button class="bmul" onclick="mul();">x</button>
+                    <button class="bdiv" onclick="div();">/</button>
+
+        </div>
+        <button class="bclear" onclick="clearInput();">C</button>
+
+        <script src="calculator.js"></script>
+        </div>
+    </body>
+</html>
